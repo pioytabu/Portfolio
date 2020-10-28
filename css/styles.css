@@ -1,0 +1,106 @@
+.tomato {
+  background: tomato;
+}
+
+.rebecca {
+  background: rebeccapurple;
+}
+
+.icono {
+  font-size: 200px;
+}
+
+.icono:hover {
+  transform: scale(1.5) rotate(360deg);
+  transition-duration: 400ms;
+  opacity: 0.9;
+
+  transition-timing-function: ease-in;
+}
+
+.footer {
+  background: darkslategray;
+  color: ghostwhite;
+}
+.header {
+  height: 15vh;
+  background-image: url("../images/fondo.png");
+  background-size: cover;
+}
+
+p {
+  font-size: 10px;
+}
+
+.shadow {
+  /* sombra horizontal sombra vertical desenfoque color   (positivo a la derecha)
+  con el prefijo inset hago sombra interna
+  */
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.9); /*mozilla*/
+  -o-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.9); /*opera*/
+  -ms-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.9); /*explorer*/
+  -webkit-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.9); /*chrome*/
+}
+
+.cajaloca {
+  position: relative;
+  left: 0px;
+  animation-name: caja;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes caja {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 200px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.imagen {
+  width: 280px;
+  height: auto;
+  border-radius: 5px;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  filter: grayscale(100%);
+}
+
+.imagen:hover {
+  transform: scale(1.5);
+  transition-duration: 500ms;
+  opacity: 0.5;
+}
+
+.frase {
+  background: #e8ced4;
+  height: auto;
+}
+.frase-texto {
+  color: #2f58a5;
+  font-size: 32px;
+}
+
+textarea {
+  resize: none;
+}
+.subrayar {
+  text-decoration: underline;
+}
+.fondo-descarga {
+  background-image: url(../images/descarga.jpg);
+  background-size: cover;
+  opacity: 0.95;
+}
+nav {
+  position: fixed;
+}
+.alert {
+  margin-bottom: 0;
+}

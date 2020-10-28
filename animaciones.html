@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animaciones</title>
+
+    <style>
+      #caja1 {
+        position: relative;
+        left: 30px;
+        width: 200px;
+        height: 100px;
+        background: rebeccapurple;
+        padding: 6px;
+        border-radius: 6px;
+        animation-name: animacion1;
+        -moz-animation-name: animacion1;
+        -ms-animation-name: animacion1;
+        animation-duration: 3s;
+        -moz-animation-duration: 3s;
+        -ms-animation-duration: 3s;
+        animation-iteration-count: 10; /*infinite */
+      }
+      @keyframes animacion1 {
+        0% {
+          left: 30px;
+          background: rebeccapurple;
+        }
+        50% {
+          left: 500px;
+          background: mediumaquamarine;
+        }
+
+        100% {
+          left: 30px;
+          background: rebeccapurple;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--  clases orden:    important>id>clases>estilos en linea -->
+    <div id="caja1">
+      <span>😎</span>
+    </div>
+  </body>
+</html>
